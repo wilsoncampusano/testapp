@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 id="message">Hello, Im here !</h1>
+	<form name="loginForm" method="post" th:object="${user}" th:action="@{/login}">
+		<input type="text" id="username" th:field="*{username}"/>
+		<input type="password" id="password" th:field="*{password}" />
+		<input id="submitButton" type="submit" name="submit" value="Accept" />
+	</form>
+</body>
+</html>
